@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Tittles</h1>
+
+<div id="tittles">
+  <% @tittles.each do |tittle| %>
+    <%= render tittle %>
+    <p>
+      <%= link_to "Show this tittle", tittle %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New tittle", new_tittle_path %>

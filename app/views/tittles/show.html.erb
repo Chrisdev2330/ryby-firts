@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @tittle %>
+
+<div>
+  <%= link_to "Edit this tittle", edit_tittle_path(@tittle) %> |
+  <%= link_to "Back to tittles", tittles_path %>
+
+  <%= button_to "Destroy this tittle", @tittle, method: :delete %>
+</div>
